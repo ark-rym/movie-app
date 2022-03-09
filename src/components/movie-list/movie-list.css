@@ -1,0 +1,19 @@
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: 990px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.movie-list {
+  list-style: none;
+}
+
+.example {
+  margin: 0 auto;
+  margin-top: 50px;
+}
