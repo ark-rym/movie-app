@@ -6,3 +6,17 @@
   box-sizing: border-box;
   border-radius: 4px;
 }
+
+/* @media (max-width: 528px) { 
+  .input {
+    height: 80px;
+    width: 64px;
+    color: red;
+    border-radius: 100%;
+      border: 1px solid red;
+  }
+
+  .header {
+  background-color: blue;
+  }
+} */

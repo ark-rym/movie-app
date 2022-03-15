@@ -45,6 +45,14 @@ const MovieListItem = ({ data, toLocalStorage, id }) => {
     voteColor += '#66E900'
   }
 
+  const cutText = (str) => {
+    const arr = str.split(' ')
+    arr.splice(25)
+    return `${arr.join(' ')} ...`
+  }
+
+  const text = cutText(data.overview)
+
   const voteClass = `movie-card_vote ${voteColor}`
 
   return (
@@ -53,17 +61,15 @@ const MovieListItem = ({ data, toLocalStorage, id }) => {
         <img src={`${imgUrl}${data.poster_path}`} alt={data.original_title} />
       </div>
       <div className="movie-card_info">
-        <div>
-          <div className="movie-card_header">
-            <h5 className="mivie-card_title">{data.original_title}</h5>
-            <div className={voteClass}>{data.vote_average}</div>
-          </div>
+        <div className="movie-card_header">
+          <h5 className="mivie-card_title">{data.original_title}</h5>
+          <div className={voteClass}>{data.vote_average}</div>
+        </div>
 
-          <span className="mivie-card_release_date">{date}</span>
-          <div className="movie-card_genre">{genre}</div>
-          <div className="movie-card_overview">
-            <p className="movie-card_overview_text">{data.overview}</p>
-          </div>
+        <span className="mivie-card_release_date">{date}</span>
+        <div className="movie-card_genre">{genre}</div>
+        <div className="movie-card_overview">
+          <p className="movie-card_overview_text">{text}</p>
         </div>
         <span className="rate">
           <Rate
