@@ -7,7 +7,7 @@ import MovieList from '../movie-list'
 import AppPagination from '../app-pagination'
 import { MovieContext } from '../movie-context'
 
-import './app.css'
+import './app.scss'
 
 const { TabPane } = Tabs
 

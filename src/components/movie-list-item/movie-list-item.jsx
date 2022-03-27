@@ -4,7 +4,7 @@ import { Rate } from 'antd'
 
 import { Context } from '../movie-context/movie-context'
 
-import './movie-list-item.css'
+import './movie-list-item.scss'
 
 const MovieListItem = ({ data, toLocalStorage, id }) => {
   const imgUrl = data.poster_path ? 'https://image.tmdb.org/t/p/w500' : ''

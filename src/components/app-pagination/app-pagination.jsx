@@ -1,7 +1,7 @@
 import React from 'react'
 import { Pagination } from 'antd'
 
-import './app-pagination.css'
+import './app-pagination.scss'
 
 const AppPagination = ({ totalPage, currentPage, pageChange }) => {
   return (
@@ -9,7 +9,6 @@ const AppPagination = ({ totalPage, currentPage, pageChange }) => {
       className="pagination"
       size="small"
       total={totalPage}
-      // defaultPageSize={6}
       defaultCurrent={1}
       current={currentPage}
       onChange={pageChange}

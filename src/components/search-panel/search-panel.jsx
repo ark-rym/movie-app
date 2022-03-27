@@ -1,7 +1,7 @@
 import React from 'react'
 import { debounce } from 'debounce'
 
-import './search-panel.css'
+import './search-panel.scss'
 
 const SearchPanel = ({ onInputChange }) => {
   const onChange = (e) => {

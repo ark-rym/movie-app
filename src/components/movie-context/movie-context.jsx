@@ -27,10 +27,3 @@ export default class MovieContext extends React.Component {
     return <Context.Provider value={this.state.genres}>{this.props.children}</Context.Provider>
   }
 }
-
-// const {
-//   Provider: MovieServiceProvider,
-//   Consumer: MovieServiceConsumer
-// } = React.createContext()
-
-// export {MovieServiceConsumer, MovieServiceProvider}

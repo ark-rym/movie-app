@@ -15,22 +15,45 @@
   line-height: 22px;
 
   color: #000000;
+
+  @media (max-device-width: 528px) {
+    width: 387px;
+    height: 245px;
+  }
 }
 
-.movie-card_picture img {
-  width: 100%;
-  height: 100%;
+.movie-card_picture {
+  width: 183px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-device-width: 528px) {
+    width: 60px;
+    height: 91px;
+    margin-top: 6px;
+    margin-left: 10px;
+  }
 }
 
 .movie-card_info {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  width: 78%;
+  max-width: 270px;
+  // width: 60%;
   margin-left: 20px;
   margin-top: 12px;
 
   position: relative;
+
+  @media (max-device-width: 528px) {
+    max-width: 304px;
+    margin-left: 10px;
+    margin-top: 4px;
+  }
 }
 
 .movie-card_header {
@@ -44,6 +67,10 @@
   font-size: 20px;
   line-height: 28px;
   max-width: 185px;
+
+  @media (max-device-width: 528px) {
+    max-width: 260px;
+  }
 }
 
 .movie-card_vote {
@@ -88,9 +115,15 @@
 
 .movie-card_genre {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   max-width: 280px;
+  max-height: 30px;
+  overflow: hidden;
+
+  @media (max-device-width: 528px) {
+    max-width: 310px;
+  }
 }
 
 .movie-card_genre_item {
@@ -111,48 +144,22 @@
 }
 
 .rate-stars {
-  /* margin-top: auto; */
   position: absolute;
   padding: 7px 0;
   bottom: 2px;
   font-size: 15px;
+
+  @media (max-device-width: 528px) {
+    right: 10px;
+    margin-right: 0px;
+  }
 }
 
 @media (max-device-width: 528px) {
-  .movie-card {
-    width: 387px;
-    height: 245px;
-  }
-
-  .movie-card_picture {
-    width: 60px;
-    height: 91px;
-    margin-top: 6px;
-    margin-left: 10px;
-  }
-
-  .movie-card_info {
-    margin-left: 10px;
-    margin-top: 4px;
-  }
-
-  .mivie-card_title {
-    max-width: 260px;
-  }
-
-  .movie-card_genre {
-    max-width: 310px;
-  }
-
   .movie-card_overview {
     position: relative;
     left: -70px;
     top: 1px;
     width: 370px;
-  }
-
-  .rate-stars {
-    right: 10px;
-    margin-right: 0px;
   }
 }

@@ -3,7 +3,7 @@ import { Spin, Alert } from 'antd'
 
 import MovieListItem from '../movie-list-item'
 
-import './movie-list.css'
+import './movie-list.scss'
 
 const MovieList = ({ data, loading, error, toLocalStorage, fromLocalStorage, isRated }) => {
   const viewData = isRated ? fromLocalStorage() : data
