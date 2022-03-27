@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import { Alert, Tabs } from 'antd'
 
 import MovieService from '../../services/movie-service'
-import SearchPanel from '../search-panel'
-import MovieList from '../movie-list'
-import AppPagination from '../app-pagination'
-import { MovieContext } from '../movie-context'
+import { SearchPanel } from '../SearchPanel'
+import { MovieList } from '../MovieList'
+import { AppPagination } from '../AppPagination'
+import { MovieContext } from '../MovieContext'
 
-import './app.scss'
+import './App.scss'
 
 const { TabPane } = Tabs
 

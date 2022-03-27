@@ -1,7 +1,7 @@
 import React from 'react'
 import { Pagination } from 'antd'
 
-import './app-pagination.scss'
+import './AppPagination.scss'
 
 const AppPagination = ({ totalPage, currentPage, pageChange }) => {
   return (

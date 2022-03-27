@@ -1,9 +1,9 @@
 import React from 'react'
 import { Spin, Alert } from 'antd'
 
-import MovieListItem from '../movie-list-item'
+import { MovieListItem } from '../MovieListItem'
 
-import './movie-list.scss'
+import './MovieList.scss'
 
 const MovieList = ({ data, loading, error, toLocalStorage, fromLocalStorage, isRated }) => {
   const viewData = isRated ? fromLocalStorage() : data

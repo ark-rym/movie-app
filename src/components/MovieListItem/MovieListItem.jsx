@@ -2,9 +2,9 @@ import React from 'react'
 import { format } from 'date-fns'
 import { Rate } from 'antd'
 
-import { Context } from '../movie-context/movie-context'
+import { Context } from '../MovieContext/MovieContext'
 
-import './movie-list-item.scss'
+import './MovieListItem.scss'
 
 const MovieListItem = ({ data, toLocalStorage, id }) => {
   const imgUrl = data.poster_path ? 'https://image.tmdb.org/t/p/w500' : ''
@@ -71,9 +71,9 @@ const MovieListItem = ({ data, toLocalStorage, id }) => {
         <div className="movie-card_overview">
           <p className="movie-card_overview_text">{text}</p>
         </div>
-        <span className="rate">
+        <span className="movie-card_rate">
           <Rate
-            className="rate-stars"
+            className="movie-card_rate-stars"
             onChange={handleChange}
             count={10}
             defaultValue={getRate && getRate[0]?.voteStars}

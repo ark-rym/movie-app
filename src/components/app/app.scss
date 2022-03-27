@@ -33,6 +33,10 @@ body {
   margin: 0 auto;
   padding: 32px 36px;
   background-color: #ffffff;
+
+  @media (max-width: 528px) {
+    padding: 18px 16px;
+  }
 }
 
 .alert {
@@ -44,10 +48,4 @@ body {
 .tabs {
   display: flex;
   align-items: center;
-}
-
-@media (max-width: 528px) {
-  .movie-app {
-    padding: 18px 16px;
-  }
 }

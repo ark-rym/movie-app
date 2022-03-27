@@ -2,20 +2,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
 
-.movie-list {
-  list-style: none;
-}
+  .movie-list {
+    list-style: none;
+  }
 
-.example {
-  margin: 0 auto;
-  margin-top: 50px;
-}
+  .example {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
 
-@media (max-width: 990px) {
-  .movies {
+  @media (max-width: 990px) {
     flex-direction: column;
     align-items: center;
   }
 }
+
+
